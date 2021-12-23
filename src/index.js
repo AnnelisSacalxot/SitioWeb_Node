@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const indexRoute = require('./routes/index');
 
 //si se desea modificar el puerto del servidor se manejara
 // con una constante
@@ -12,7 +11,7 @@ app.set('view engine' , 'ejs');
 //middlewares
 
 //routes
-app.use(indexRoute);
+app.use(require('./routes/index'));
 
 //static files
 

@@ -1,8 +1,8 @@
 const express = require('express');
-const router = express.Router(); 
+const router = express.Router();
 
-router.get('/',(req, res) =>{
-     res.render('laboratorista', {title: 'Datos examen'});
- });
+router.get('/', (req, res) => {
+    res.render('index', {title: 'Página Node'});
+});
 
- module.exports = router;
+module.exports = router;
